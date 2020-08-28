@@ -257,9 +257,11 @@ label[for] {
 .flex-jc-sb {
   justify-content: space-between;
 }
+
 .flex-ai-c {
   align-items: center;
 }
+
 .ch-flex-1-0-auto>* {
   flex: 1 0 auto;
 }
@@ -282,32 +284,78 @@ label[for] {
   margin-left: auto;
   margin-right: auto;
 }
+
 .color-fff {
   color: #fff;
 }
+
 /* fullpage-move-menu 커스텀 */
 #menu {
-  top:24%;
-  left:4%;
+  top: 24%;
+  left: 1.5%;
   z-index: 4;
-  font-size:13px;
+  font-size: 13px;
   font-weight: bold;
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
 }
-#menu > li {
+
+#menu>li {
   position: relative;
-  margin: 18px 0;
+  margin: 17px 0;
 }
-#menu > li.active {
+#menu>li:last-child {
+  font-size:14px;
+}
+#menu>li.active {
   color: #fff;
 }
-#menu > li > a {
-  padding: 3px 0;
+
+#menu>li>a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
 }
+
+#menu>li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 8px;
+  height: 9px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 100% 0;
+}
+
+#menu>li.active::before {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 100% 100%;
+}
+
+#menu>li:not(:first-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 3px;
+  width: 2px;
+  height: 16px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_pxnavi_line.png) no-repeat 100% 0;
+}
+#menu>li:not(:first-child).active ~ .color::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 3px;
+  width: 2px;
+  height: 16px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_pxnavi_line.png) no-repeat 0 0;
+}
+
+
 /* top-menu-bar 커스텀 */
 
 .top-menu-bar {
-  top:0;
+  top: 0;
   width: 100%;
   z-index: 5;
 }
@@ -374,20 +422,24 @@ label[for] {
 .top-menu-bar>.menu-box-1>ul>li>a>input:focus {
   outline: 2px solid #0063cc;
 }
+
 /* menu-box-1 커스텀 끝 */
 
 /* menu-box-2 커스텀 */
 .top-menu-bar>.menu-box-2-background {
   background: #ffffff;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu {
-  flex-grow:3;
+  flex-grow: 3;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a>span {
   display: block;
   position: relative;
-  padding-bottom:16px;
+  padding-bottom: 19px;
 }
+
 /*
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a>span::after {
   content:"";
@@ -402,37 +454,42 @@ label[for] {
 */
 /* 이부분은 혼자 꼭 해봐야한다.... */
 .hover-item {
-  position:absolute;
-  width:100px;
-  height:3px;  
-  bottom:0;
-  left:50%;
-  transition:width .3s , left .3s;
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transition: width .3s, left .3s;
 }
+
 .hover-item::before {
-  content:"";
-  display:block;
-  height:100%;
-  width:0%;
-  margin:0 auto;
-  transition:width .3s, left .3s;
-  background-color:  #0063cc;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0%;
+  margin: 0 auto;
+  transition: width .3s, left .3s;
+  background-color: #0063cc;
 }
+
 .hover-item.active::before {
-  width:100%;
+  width: 100%;
 }
 
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a {
   font-size: 18px;
-  padding-top:13px;
+  padding-top: 13px;
   transition: color .1s;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li:hover>a {
-  color:#0063cc;
+  color: #0063cc;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu {
   flex-grow: 4;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>ul>.logo>a {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_gnb_home.png);
   background-repeat: no-repeat;
@@ -440,7 +497,7 @@ label[for] {
   background-size: contain;
   width: 138px;
   height: 20px;
-  margin-top:13px;
+  margin-top: 10px;
 }
 
 
@@ -452,16 +509,18 @@ label[for] {
   overflow: hidden;
   position: relative;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login::after {
-  content:"";
+  content: "";
   position: absolute;
   width: 1px;
   height: 70%;
-  background: rgba(0,0,0,0.2);
-  right:0;
-  top:0;
+  background: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
   transform: translateY(20%);
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login>a {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_gnb_login.png);
   background-repeat: no-repeat;
@@ -470,11 +529,13 @@ label[for] {
   width: 34px;
   height: 34px;
   transition: background-position .3s;
-  
+
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login:hover>a {
   background-position: 0 -34px;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.all-menu>a {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_gnb_sitemap.png);
   background-repeat: no-repeat;
@@ -484,75 +545,485 @@ label[for] {
   height: 34px;
   transition: background-position .3s;
 }
+
 .top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.all-menu:hover>a {
   background-position: 0 -34px;
 }
+
 /* menu-box-2 커스텀 끝 */
 
 /* main-banner 커스텀 */
-.main-slide-banner > ul > li {
+
+.main-slide-banner>.image-slider>li {
   position: absolute;
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity .6s;
 }
-.main-slide-banner > ul > li.active {
+
+.main-slide-banner>.image-slider>li.active {
   opacity: 1;
 }
-.main-slide-banner > .text-slider > li {
+
+.main-slide-banner>.text-slider>li {
   width: 100%;
   height: 100vh;
 
 }
-.main-slide-banner > ul > li > .title-text,
-.main-slide-banner > ul > li > .sub-title {
+
+/* 메인슬라이드 텍스트박스 커스텀 (.main-slide-banner>.image-slider>li>.text-box>.title-text) */
+.main-slide-banner>.image-slider>li>.text-box>* {
   position: absolute;
 }
-.main-slide-banner > ul > li > .title-text {
+
+.main-slide-banner>.image-slider>li>.text-box>.title-text {
   width: 100%;
-  font-size: 58px;
-  line-height: 1.2;
+  top:29%;
+  font-size: 56.5px;
+  line-height: 1.25;
   letter-spacing: -5px;
-  top:30%;
-  left:0%;
+}
+.main-slide-banner>.image-slider>li>.text-box>.sub-title {
+  width: 100%;
+  top:45%;
+  z-index: 5;
+  font-size:16.1px;
+  letter-spacing: -.3px;
+}
+.main-slide-banner>.image-slider>.banner-1>.text-box>.sub-title {
+  font-size:16.4px;
+}
+.main-slide-banner>.image-slider>.banner-2>.text-box>.title-text {
+  top:28.6%;
+  font-size: 59px;
+  font-weight: 500;
+  letter-spacing: -4.6px;
+}
+.main-slide-banner>.image-slider>.banner-2>.text-box>.sub-title {
+  width: 100%;
+  top:38.2%;
+  z-index: 5;
+  
+}
+.main-slide-banner>.image-slider>.banner-3>.text-box>.title-text {
+  top:28.6%;
+  font-size: 59px;
+  font-weight: 500;
+  letter-spacing: -4.6px;
+}
+.main-slide-banner>.image-slider>.banner-3>.text-box>.sub-title {
+  width: 100%;
+  top:46%;
+  z-index: 5;
+}
+.main-slide-banner>.image-slider>.banner-4>.text-box>.title-text {
+  top:28.6%;
+  font-size: 59px;
+  font-weight: 500;
+  letter-spacing: -4.6px;
+}
+.main-slide-banner>.image-slider>.banner-4>.text-box>.sub-title {
+  width: 100%;
+  top:38.2%;
+  z-index: 5;
+}
+.main-slide-banner>.image-slider>.banner-5>.text-box>.title-text {
+  top:28.6%;
+  font-size: 59px;
+  font-weight: 500;
+  letter-spacing: -4.6px;
+}
+.main-slide-banner>.image-slider>.banner-5>.text-box>.sub-title {
+  width: 100%;
+  top:38.2%;
+  z-index: 5;
+}
+/* 메인슬라이드 텍스트박스 커스텀 끝 */
+.main-slide-banner>.image-slider>.slide-number {
+  height: 100%;
+  border:1px solid red; 
+}
+.main-slide-banner>.image-slider>.slide-number>.btn-box {
+  position: absolute;
+  top:225px;
+  z-index: 6;
+}
+.main-slide-banner>.image-slider>.slide-number>.btn-box>.no- {
+  padding-right:46px;
+  position: relative;
+  color: rgba(255,255,255,.5);
+}
+.main-slide-banner>.image-slider>.slide-number>.btn-box>.no-.active {
+  color: rgba(255,255,255,1);
+}
+.main-slide-banner>.image-slider>.slide-number>.btn-box>.no->span {
+  cursor: pointer;
+}
+.main-slide-banner>.image-slider>.slide-number>.btn-box>.no-:not(:last-child)>span::after {
+  content:"/";
+  position: absolute;
+  right:30%;
+  top:50%;
+  transform: translateY(-50%);
+  color: rgba(255,255,255,.3);
+  font-size:13px;
 }
 /* main-slide image 커스텀 */
-.main-slide-banner > ul > .banner-1 {
+.main-slide-banner>.image-slider>.banner-1 {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/slide1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
-.main-slide-banner > ul > .banner-2 {
+
+.main-slide-banner>.image-slider>.banner-2 {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/slide2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
-.main-slide-banner > ul > .banner-3 {
+
+.main-slide-banner>.image-slider>.banner-3 {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/slide3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
-.main-slide-banner > ul > .banner-4 {
+
+.main-slide-banner>.image-slider>.banner-4 {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/slide4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
-.main-slide-banner > ul > .banner-5 {
+
+.main-slide-banner>.image-slider>.banner-5 {
   background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/slide5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position: center;
   width: 100%;
   height: 100vh;
 }
+
+/* main-page-side-menu 커스텀 */
+.main-page-side-menu  {
+  height: 90%;
+}
+.main-page-side-menu > .side-menu-box {
+  position: absolute;
+  width: 268px;
+  height: 100%;
+  top:27.5%;
+  right:0;
+}
+
+.main-page-side-menu > .side-menu-box>ul>li {
+  width: calc(230px/2);
+  position: relative;
+  
+}
+.main-page-side-menu > .side-menu-box>.top-menu>li {
+  margin-left: 10px;
+}
+.bottom-menu>.account-inquiry,.bottom-menu>.transfer {
+  margin-top: 20px;
+}
+.main-page-side-menu > .side-menu-box>.bottom-menu>li {
+  margin-left: 10px;
+}
+.main-page-side-menu > .side-menu-box>ul>.login>a {
+  margin-top: 10px;
+}
+.main-page-side-menu > .side-menu-box>ul>.certification-center>a {
+  margin-top: 28px;
+}
+/* side-menu icon 커스텀 (.main-page-side-menu > .side-menu-box>ul>li>a>.icon)*/
+.main-page-side-menu > .side-menu-box>ul>li>.hover-bg {
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left:35px;
+  top:-2px;
+  z-index: inherit;
+  transform: scale(0);
+  transition: transform .3s;
+}
+.main-page-side-menu > .side-menu-box>ul>li:hover>.hover-bg {
+  transform: scale(1);
+}
+.main-page-side-menu > .side-menu-box>ul>li:hover>a>.icon {
+  z-index: 3;
+}
+.main-page-side-menu > .side-menu-box>ul>li>a>.text {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* side-menu:hover 효과 커스텀 */
+.main-page-side-menu > .side-menu-box>ul>li>a>.text::before {
+  content:"";
+  position: absolute;
+  bottom:0;
+  right:50%;
+  width:0;
+  height: 1px;
+  background: #fff;
+  transition: width .3s;
+}
+.main-page-side-menu > .side-menu-box>ul>li>a>.text::after {
+  content:"";
+  position: absolute;
+  bottom:0;
+  left:50%;
+  width:0;
+  height: 1px;
+  background: #fff;
+  transition: width .3s;
+}
+.main-page-side-menu > .side-menu-box>ul>li:hover>a>.text::before,
+.main-page-side-menu > .side-menu-box>ul>li:hover>a>.text::after {
+  width: 50%;
+}
+/* side-menu:hover 효과 커스텀 끝 */
+
+
+.main-page-side-menu > .side-menu-box>ul>.login>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_gnb_login.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+  width: 37px;
+  height: 37px;
+  margin-right: 3px;
+  margin-left: -8px;
+  display: inline-block;
+  transform: translateY(35%);
+}
+/* account-inquiry */
+.main-page-side-menu > .side-menu-box>ul>.account-inquiry>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -5px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.account-inquiry:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -5px 108%;
+  background-size: 300px;
+}
+/* transfer */
+.main-page-side-menu > .side-menu-box>ul>.transfer>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -56px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.transfer:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -56px 108%;
+  background-size: 300px;
+}
+/* new-deposit */
+.main-page-side-menu > .side-menu-box>ul>.new-deposit>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -106px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.new-deposit:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -106px 108%;
+  background-size: 300px;
+}
+/* card-application */
+.main-page-side-menu > .side-menu-box>ul>.card-application>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -156px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.card-application:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -156px 108%;
+  background-size: 300px;
+}
+/* quick-inquir */
+.main-page-side-menu > .side-menu-box>ul>.quick-inquiry>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -203px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.quick-inquiry:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -203px 108%;
+  background-size: 300px;
+}
+/* consumer-protection */
+.main-page-side-menu > .side-menu-box>ul>.consumer-protection>a>.icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_quick.png);
+  background-repeat: no-repeat;
+  background-position: -255px -4px;
+  background-size: 300px;
+  width: 50px;
+  height: 50px;
+  top:0;
+  margin-left: 42px;
+  display:block;
+  border-radius: 50%;
+  position: relative;
+}
+.main-page-side-menu > .side-menu-box>ul>.consumer-protection:hover>a>.icon {
+  background-repeat: no-repeat;
+  background-position: -255px 108%;
+  background-size: 300px;
+}
+/* side-menu icon 커스텀 끝*/
+.main-page-side-menu > .side-menu-box>.top-menu{
+  position: absolute;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_quick_top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -19px -14px;
+  width: 322px;
+  height: 99px;
+}
+
+.main-page-side-menu > .side-menu-box>.top-menu>li {
+  height: 100%;
+}
+.main-page-side-menu > .side-menu-box>.bottom-menu{
+  position: absolute;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_quick_bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -19px 0;
+  width: 322px;
+  height: 395px;
+  top:85px;
+}
+.main-page-side-menu > .side-menu-box>.bottom-menu>li {
+  height: calc(310px/3);
+}
+
+.side-banner > .img {
+  position: absolute;
+  top:80.5%;
+  right:0;
+}
+.side-banner > .img > a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/200612_001.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 268px;
+  height: 100px;
+}
+/* main-page-side-menu 커스텀 끝 */
+
+
+/* main-page-bottom 커스텀 */
+.scroll-guide {
+  z-index: 6;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: bold;
+  bottom:125px;
+  letter-spacing: .5px;
+}
+.scroll-guide::after {
+  content: "";
+  position: absolute;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_scroll_guide.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  bottom:-20px;
+  width: 10px;
+  height: 15px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.main-page-bottom-menu {
+  background: rgba(0,0,0,0.55);
+  height: 90px;
+  width: 100%;
+  text-align: right;
+}
+.main-page-bottom-menu>.bottom-menu-box {
+  margin-top: 18px;
+}
+.main-page-bottom-menu>.bottom-menu-box>div>a>.fas {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.main-page-bottom-menu>.bottom-menu-box>ul {
+  width: calc(80%/2);
+}
+.main-page-bottom-menu>.bottom-menu-box>div {
+  width: calc(20%/2);
+}
+.main-page-bottom-menu>.bottom-menu-box>ul>li>a{
+  width:65%;
+  margin-left: 35px;
+  margin-bottom: 3px;
+  text-align:left;
+}
+.main-page-bottom-menu>.bottom-menu-box>ul>li>a:hover {
+  text-decoration: underline;
+}
+.main-page-bottom-menu>.bottom-menu-box>ul>li>.date {
+  font-size: 14px;
+}
+
+
+
+/* main-page-bottom 커스텀 끝 */
+
