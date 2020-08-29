@@ -30,7 +30,7 @@
   <!-- top-menu-bar HTML -->
   <div class="top-menu-bar fixed">
     <!-- menu-box-1 HTML -->
-    <nav class="menu-box-1">
+    <nav class="menu-box-1 fixed">
       <ul class="flex flex-jc-e con-1">
         <li><a href="#" class="block">고객센터</a></li>
         <li><a href="#" class="block">인증센터</a></li>
@@ -39,7 +39,7 @@
       </ul>
     </nav>
     <!-- menu-box-2 HTML -->
-    <div class="menu-box-2-background">
+    <div class="menu-box-2-background fixed">
       <nav class="menu-box-2 flex con-1">
         <ul class="text-menu  relative flex flex-jc-sa flex-ai-c">
           <span class="hover-item"></span>
@@ -121,6 +121,7 @@
               <div class="no-3 no- cell"><span>03</span></div>
               <div class="no-4 no- cell"><span>04</span></div>
               <div class="no-5 no- cell"><span>05</span></div>
+              <div class="start-stop-btn cell relative"><span class="start"><i class="fas fa-play"></i></span><span class="stop active"><i class="fas fa-pause"></i></span></div>
             </div>
           </div>
         </ul>
@@ -159,6 +160,7 @@
         </div>
       </div>
       <div class="scroll-guide color-fff absolute-bottom">Scroll</div>
+      <div class="scroll-guide-arrow absolute-bottom"></div>
       <div class="main-page-bottom-menu absolute-bottom color-fff">
         <nav class="bottom-menu-box con-1 row">
         <div class="news cell"><a href="#" class="block">새소식<i class="fas fa-chevron-right"></i></a></div>
@@ -176,7 +178,9 @@
     </div>
     <!-- section .2 HTML -->
     <div class="section">
-
+      <div class="section-2 con-1">
+        <div class="title text-align-center"><img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/h2_news_event.png" alt=""></div>
+      </div>
     </div>
     <!-- section .3 HTML -->
     <div class="section">
