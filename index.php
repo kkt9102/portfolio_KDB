@@ -213,7 +213,7 @@
           <nav class="notice cell">
             <ul class="">
               <div class="title">공지사항</div>
-              <li class=""><a href="#" class="block">수도권 소재 점포 영업시간 단축 안내</a><div class="date">2020-09-01</div></li>
+              <li class="first-list"><a href="#" class="block">수도권 소재 점포 영업시간 단축 안내</a><div class="date">2020-09-01</div></li>
               <li class=""><a href="#" class="block">비대면 실명확인 서비스 일시중단 안내 (8.31/9.1)</a><div class="date">2020-08-31</div></li>
               <li class=""><a href="#" class="block">「한국산업은행 2020년 혁신계획」 게시</a><div class="date">2020-08-31</div></li>
               <li class=""><a href="#" class="block">뱅크월렛 서비스 종료 안내</a><div class="date">2020-08-24</div></li>
@@ -253,16 +253,17 @@
               <div class="dot cell"></div>
               <div class="dot cell"></div>
               <div class="dot cell"></div>
-              <div class="start-stop-btn"></div>
+              <div class="start-stop-btn cell relative"><span class="start"><i class="fas fa-play"></i></span><span
+                  class="stop active"><i class="fas fa-pause"></i></span></div>
             </div>
           </nav>
-          <nav class="cell">
-            <ul>
+          <nav class="hire-security cell">
+            <ul class="hire-board">
               <div class="title">입찰&채용</div>
               <li><a href="#" class="block">[사전규격공개]상시 회상회의 체계 구축 사업</a><div class="date">2020-09-01</div></li>
               <li><a href="#" class="block">오픈뱅킹 및 디지털금융 서비스 강화 추진</a><div class="date">2020-08-31</div></li>
             </ul>
-            <ul>
+            <ul class="security-board">
               <div class="title">보안소식</div>
               <li><a href="#" class="block">「코로나 19 피싱」피해예방을 위한 대고객 안내</a><div class="date">2020-03-04</div></li>
               <li><a href="#" class="block">대포통장 명의인에 대한 금융거래 제한 확대 시행 안내</a><div class="date">2020-02-13</div></li>
@@ -271,16 +272,23 @@
         </div>
         <div class="section-2-bottom-menu-item row">
           <nav class="section-2-bottom-menu-box cell">
-            <ul class="row">
-              <div class="icon"></div>
+            <ul class="row text-align-center">
+              <div class="icon cell"><img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_boldbox.png" alt=""></div>
               <li class="cell"><a href="#" class="block"><span class="relative">경영공시</span></a></li>
               <li class="cell"><a href="#" class="block"><span class="relative">상품공시</span></a></li>
               <li class="cell"><a href="#" class="block"><span class="relative">윤리경영</span></a></li>
-              <li class="cell"><a href="#" class="block"><span class="relative">정보공개</span></a></li>
+              <li class="cell btn-item relative"><a class="block"><span class="relative">정보공개<i class="fas fa-caret-down"></i></span></a>
+                <ul class="btn-menu">
+                  <li><a href="#" class="block">사전정보공표</a></li>
+                  <li><a href="#" class="block">정보공개청구</a></li>
+                  <li><a href="#" class="block">비공개대상정보세부기준</a></li>
+                  <p class="close-btn"><i class="fas fa-times"></i>닫기</p>
+                </ul>
+              </li>
             </ul>
           </nav>
-          <nav class="sub-slide cell">
-            <ul class="relative">
+          <nav class="sub-slide cell relative">
+            <ul class="">
               <li class="active">
                 <a href="#" class="block">
                   <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-sub-slider-1.jpg" alt="">
@@ -331,7 +339,8 @@
               <div class="dot cell"></div>
               <div class="dot cell"></div>
               <div class="dot cell"></div>
-              <div class="start-stop-btn"></div>
+              <div class="start-stop-btn cell"><span class="start"><i class="fas fa-play"></i></span><span
+                  class="stop active"><i class="fas fa-pause"></i></span></div>
             </div>
           </nav>
         </div>
@@ -342,12 +351,47 @@
 
     </div>
     <!-- section .4 HTML -->
-    <div class="section">
+    <div class="section" id="section3">
+      <div class="section-4">
+        
+      </div>
 
     </div>
     <!-- section .5 HTML -->
-    <div class="section">
-
+    <div class="section fp-auto-height">
+      <div class="footer con-1">
+        <nav class="footer-menu-box row">
+          <ul class="footer-left-menu cell row">
+            <li class="cell"><a href="#" class="block">영업점안내</a></li>
+            <li class="cell"><a href="#" class="block">전자민원접수</a></li>
+            <li class="cell"><a href="#" class="block">개인정보처리방침</a></li>
+            <li class="cell"><a href="#" class="block">규제센터</a></li>
+            <li class="cell"><a href="#" class="block">보안센터</a></li>
+            <li class="cell"><a href="#" class="block">보호금용상품등록부</a></li>
+          </ul>
+          <ul class="footer-right-menu cell-right row">
+            <li class="cell"><a href="#" class="block">권익위</a></li>
+            <li class="cell"><a href="#" class="block">부패신고</a></li>
+            <li class="cell"><a href="#" class="block">공익신고</a></li>
+            <li class="cell"><a href="#" class="block">복지보조금부정신고</a></li>
+          </ul>
+        </nav>
+        <div class="footer-last row">
+          <div class="text-box cell">
+            <div class="address">07242 서울시 영등포구 은행로 14</div>
+            <div class="main-tel">대표전화 : 02-787-4000, 고객상담실 국내 : 1588-1500, 1668-1500, 1668-1500, 해외 : +82-1588-1500, +82-1668-1500</div>
+            <div class="copyright">Copyright ©2019 Korea Development Bank, All right reserved.</div>
+          </div>
+          <nav class="icon-link cell">
+            <ul class="row">
+              <li class="blog cell"><a href="#" class="block"></a></li>
+              <li class="facebook cell"><a href="#" class="block"></a></li>
+              <li class="youtube cell"><a href="#" class="block"></a></li>
+              <div class="certification-mark cell"><img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_wa.png" alt=""></div>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
 
