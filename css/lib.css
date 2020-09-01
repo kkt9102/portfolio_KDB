@@ -1,0 +1,608 @@
+/* 폰트적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label[for] {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 라이브러리 */
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.absolute-left {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-middle.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.cell {
+  float: left;
+  box-sizing: border-box;
+}
+
+.cell-right {
+  float: right;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.img-box>img {
+  width: 100%;
+  display: block;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-0-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.line-height-0>* {
+  line-height: normal;
+}
+
+.width-30px {
+  width: 30px;
+}
+
+.width-35px {
+  width: 35px;
+}
+
+.width-40px {
+  width: 35px;
+}
+
+.width-45px {
+  width: 35px;
+}
+
+.width-50px {
+  width: 50px;
+}
+
+.width-80px {
+  width: 80px;
+}
+
+.width-100px {
+  width: 100px;
+}
+
+.width-100p {
+  width: 100%;
+}
+
+.width-60p {
+  width: 60%;
+}
+
+.width-55p {
+  width: 55%;
+}
+
+.width-50p {
+  width: 50%;
+}
+
+.width-45p {
+  width: 45%;
+}
+
+.width-40p {
+  width: 40%;
+}
+
+.width-30p {
+  width: 30%;
+}
+
+.width-35p {
+  width: 35%;
+}
+
+.width-100p-except-30px {
+  width: calc(100% - 30px);
+}
+
+.width-100p-except-35px {
+  width: calc(100% - 35px);
+}
+
+.width-100p-except-40px {
+  width: calc(100% - 40px);
+}
+
+.width-100p-except-50px {
+  width: calc(100% - 50px);
+}
+
+.width-100p-except-80px {
+  width: calc(100% - 80px);
+}
+
+.width-100p-except-100px {
+  width: calc(100% - 100px);
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.font-size-dot-8rem {
+  font-size: .8rem;
+}
+
+.table-row {
+  display: table;
+}
+
+.table-row.row::after {
+  display: inline;
+  clear: non;
+}
+
+.table-row>.cell {
+  float: none;
+  display: table-cell;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex>.cell {
+  float: none;
+}
+
+.flex-jc-e {
+  justify-content: flex-end;
+}
+
+.flex-jc-sa {
+  justify-content: space-around;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.ch-flex-1-0-auto>* {
+  flex: 1 0 auto;
+}
+
+*>.flex-1-0-0 {
+  flex: 1 0 0;
+}
+
+/* 커스텀 */
+.con-min-width {
+  min-width: 1440px;
+}
+
+.con {
+  width: 1440px;
+}
+
+.con-1 {
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color-fff {
+  color: #fff;
+}
+
+/* fullpage-move-menu 커스텀 */
+#menu {
+  top: 25%;
+  left: 1.5%;
+  z-index: 4;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(255,255,255,.4);
+}
+
+#menu>li {
+  position: relative;
+  margin: 17px 0;
+  
+  transition: color .3s;
+}
+#menu>li:last-child {
+  font-size:14px;
+}
+#menu>.with-kdb.active {
+  color: #fff;
+}
+
+body.fp-viewing-anchor2 #menu li:not(.active),
+body.fp-viewing-anchor3 #menu li:not(.active),
+body.fp-viewing-anchor4 #menu li:not(.active),
+body.fp-viewing-anchor5 #menu li:not(.active) {
+  
+  color: rgba(0, 0, 0, .4);
+}
+#menu>li:not(.with-kdb).active {
+  color:#000;
+}
+#menu>li>a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+#menu>li::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 8px;
+  height: 9px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 100% 0;
+}
+
+#menu>.with-kdb.active::before {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 100% 100%;
+}
+body.fp-viewing-anchor2 #menu>li::before,
+body.fp-viewing-anchor3 #menu>li::before,
+body.fp-viewing-anchor4 #menu>li::before,
+body.fp-viewing-anchor5 #menu>li::before {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 0% 0%;
+}
+
+#menu>li:not(.with-kdb).active::before {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 0 100%;
+}
+#menu>li:not(.with-kdb)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 3px;
+  width: 2px;
+  height: 16px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_pxnavi_line.png) no-repeat 100% 0;
+}
+body.fp-viewing-anchor2 #menu > li:not(.with-kdb)::after,
+body.fp-viewing-anchor3 #menu > li:not(.with-kdb)::after,
+body.fp-viewing-anchor4 #menu > li:not(.with-kdb)::after,
+body.fp-viewing-anchor5 #menu > li:not(.with-kdb)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 3px;
+  width: 2px;
+  height: 16px;
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_pxnavi_line.png) no-repeat 0 0;
+}
+
+.scroll-guide-icon {
+  background-image: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_pxnavi_scroll.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  width:31px;
+  height: 61px;
+  position: absolute;
+  left:-10px;
+  margin-top: 25px;
+}
+body.fp-viewing-anchor2 #menu > .scroll-guide-icon,
+body.fp-viewing-anchor3 #menu > .scroll-guide-icon,
+body.fp-viewing-anchor4 #menu > .scroll-guide-icon,
+body.fp-viewing-anchor5 #menu > .scroll-guide-icon {
+  background-position: 0 0%;
+}
+/* top-menu-bar 커스텀 */
+
+.top-menu-bar {
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  transition: top .3s;
+}
+
+body.fp-viewing-anchor2 .top-menu-bar,
+body.fp-viewing-anchor3 .top-menu-bar,
+body.fp-viewing-anchor4 .top-menu-bar,
+body.fp-viewing-anchor5 .top-menu-bar {
+  top: -34px;
+}
+/* menu-box-1 커스텀 */
+
+.top-menu-bar>.menu-box-1 {
+  background: linear-gradient(to right, #0063cc 0%, #0063cc 49%, #af13c7 51%, #af13c7 100%);
+  background: linear-gradient(to right, #0063cc 0%, #583cc9 50%, #af13c7 100%);
+  width: 100%;
+}
+
+.top-menu-bar>.menu-box-1>ul {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.top-menu-bar>.menu-box-1>ul>li {
+  position: relative;
+}
+
+.top-menu-bar>.menu-box-1>ul>li:not(:last-child) {
+  padding: 10px 10px 7px 10px;
+}
+
+.top-menu-bar>.menu-box-1>ul>li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40%;
+  background: rgba(255, 255, 255, .3);
+  right: 0;
+  top: 50%;
+  transform: translateY(-30%);
+}
+
+.top-menu-bar>.menu-box-1>ul>.search {
+  margin-top: 6px;
+}
+
+.top-menu-bar>.menu-box-1>ul>li:hover:not(:last-child)>a {
+  text-decoration: underline;
+}
+
+.top-menu-bar>.menu-box-1>ul>.search>a>button {
+  background: #a84dd4;
+  border-radius: 5px;
+  padding: 3px 5px;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.top-menu-bar>.menu-box-1>ul>li>a>input {
+  width: 90px;
+  height: 23px;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+
+.top-menu-bar>.menu-box-1>ul>li>a>input:focus {
+  outline: 2px solid #0063cc;
+}
+
+/* menu-box-1 커스텀 끝 */
+
+/* menu-box-2 커스텀 */
+
+.top-menu-bar>.menu-box-2-background {
+  background: #ffffff;
+  width: 100%;
+  margin-top: 36px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu {
+  flex-grow: 3;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a>span {
+  display: block;
+  position: relative;
+  padding-bottom: 19px;
+}
+
+/*
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a>span::after {
+  content:"";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: #0063cc;
+  bottom:0;
+  left:0;
+  transition: width .3s;
+}
+*/
+/* 이부분은 혼자 꼭 해봐야한다.... */
+.hover-item {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transition: width .3s, left .3s;
+}
+
+.hover-item::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 0%;
+  margin: 0 auto;
+  transition: width .3s, left .3s;
+  background-color: #0063cc;
+}
+
+.hover-item.active::before {
+  width: 100%;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li>a {
+  font-size: 18px;
+  padding-top: 13px;
+  transition: color .1s;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>li:hover>a {
+  color: #0063cc;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu {
+  flex-grow: 4;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>ul>.logo>a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_gnb_home.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 138px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login,
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.all-menu {
+  width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  background: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
+  transform: translateY(20%);
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login>a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_gnb_login.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  transition: background-position .3s;
+
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.login:hover>a {
+  background-position: 0 -34px;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.all-menu>a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_gnb_sitemap.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  width: 34px;
+  height: 34px;
+  transition: background-position .3s;
+}
+
+.top-menu-bar>.menu-box-2-background>.menu-box-2>.icon-menu>.all-menu:hover>a {
+  background-position: 0 -34px;
+}
+
+/* menu-box-2 커스텀 끝 */
