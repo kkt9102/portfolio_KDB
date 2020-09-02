@@ -315,8 +315,7 @@ label[for] {
 body.fp-viewing-anchor2 #menu li:not(.active),
 body.fp-viewing-anchor3 #menu li:not(.active),
 body.fp-viewing-anchor4 #menu li:not(.active),
-body.fp-viewing-anchor5 #menu li:not(.active) {
-  
+body.fp-viewing-anchor5 #menu li:not(.active) { 
   color: rgba(0, 0, 0, .4);
 }
 #menu>li:not(.with-kdb).active {
@@ -606,3 +605,144 @@ body.fp-viewing-anchor5 .top-menu-bar {
 }
 
 /* menu-box-2 커스텀 끝 */
+
+
+
+/* section.5 (footer) 커스텀 */
+.footer > .footer-menu-box {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.footer > .footer-menu-box > ul > li {
+  position: relative;
+}
+.footer > .footer-menu-box > ul > li > a {
+  font-size: 16px;
+  margin:25px 0;
+}
+.footer > .footer-menu-box > ul > li:hover > a {
+  text-decoration:underline;
+}
+.footer > .footer-menu-box > .footer-left-menu > li:not(:last-child) {
+  margin-right:15px;
+}
+.footer > .footer-menu-box > .footer-right-menu > li:not(:first-child) {
+  padding-left: 10px;
+}
+.footer > .footer-menu-box > .footer-right-menu > li:not(:last-child) {
+  padding-right: 10px;
+}
+.footer > .footer-menu-box > .footer-right-menu > li:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background: #666;
+  left:0;
+  top:50%;
+  transform: translateY(-40%);
+}
+.footer > .footer-menu-box > .footer-right-menu > li > a {
+  color: #666;
+}
+
+.footer > .footer-last  {
+  margin-top:30px;
+  padding-bottom:25px;
+}
+.footer > .footer-last > .text-box > div {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: -1px;
+  margin:4px 0;
+}
+
+/* footer-icon-menu 커스텀 */
+
+.footer > .footer-last > .icon-link > ul > .blog > a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_blog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  width: 30px;
+  height: 30px;
+  opacity: .7;
+}
+
+.footer > .footer-last > .icon-link > ul > .facebook > a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  width: 15px;
+  height: 30px;
+  opacity: .7;
+}
+.footer > .footer-last > .icon-link > ul > .youtube > a {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_youtube.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 100%;
+  width: 30px;
+  height: 30px;
+  opacity: .7;
+}
+.footer > .footer-last > .icon-link > ul > li{
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.footer > .footer-last > .icon-link > ul > .certification-mark {
+  margin-right: 30px;
+}
+.footer > .footer-last > .icon-link > ul > li:hover > a {
+  opacity: 1;
+}
+.footer > .footer-last > .icon-link > .family-site {
+  border:1px solid #999;
+  color: #666;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer > .footer-last > .icon-link > .family-site > .icon {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_family_site_.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width:10px;
+  height: 6px;
+  margin-left: 50px;
+  transition: transform .3s;
+}
+.footer > .footer-last > .icon-link > .family-site.active > .icon {
+  transform:rotate(180deg);
+}
+.footer > .footer-last > .icon-link > .family-site > .family-site-list {
+  position: absolute;
+  left: -1px;
+  height: 0;
+  width: 100%;
+  bottom:96%;
+  background: #fff;
+  overflow: hidden;
+  transition: height .3s;
+  border-radius: 5px 5px 0 0;
+  
+}
+.footer > .footer-last > .icon-link > .family-site.active > .family-site-list {
+  height: calc(100%*5);
+  border-top:1px solid #999;
+  border-left:1px solid #999;
+  border-right:1px solid #999;
+}
+.footer > .footer-last > .icon-link > .family-site > .family-site-list > li > a {
+  padding: 10px;
+}
+.footer > .footer-last > .icon-link > .family-site > .family-site-list > li:hover > a {
+  background: rgba(0,0,0,0.05);
+}
+
+/* footer-icon-menu 커스텀 끝 */
+/* section.5 (footer) 커스텀 끝 */

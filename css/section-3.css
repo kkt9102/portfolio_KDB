@@ -1,0 +1,54 @@
+.section-3 {
+    padding-top: 60px;
+}
+.section-3 > .title {
+    margin-top: 95px;
+}
+.section-3 > .special-menu-top > ul > li > a > .text > .title {
+    font-size: 14px;
+    color: #666;
+}
+.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-1 {
+    font-size: 20px;
+}
+.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-2 {
+    font-size: 20px;
+}
+.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-3 {
+    font-size: 20px;
+}
+.section-3 > .special-menu-top > ul > li > a > .text {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    display: inline-block;
+    width: 273px;
+    height: 223px;
+}
+.section-3 > .special-menu-top > ul > li > a > .text::before {
+    content: "";
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box_arr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-3 > .special-menu-top > ul > .next-round > a > .img {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/cms_special_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    display: inline-block;
+    width: 273px;
+    height: 223px;
+    border-radius: 8px 0 0 8px;
+}
+.section-3 > .special-menu-top > ul > .future-strategy > a > .img {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/00.미래전약연구소.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    display: inline-block;
+    width: 273px;
+    height: 223px;
+    border-radius: 8px 0 0 8px;
+}
