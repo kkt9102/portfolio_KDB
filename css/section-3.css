@@ -26,13 +26,19 @@
 .section-3 > .special-top-memu > ul > li > a > .text-box > .title {
     font-size: 14px;
     font-weight: 300;
+    margin-top: 35px;
 }
 .section-3 > .special-top-memu > ul > li > a > .text-box > .sub-title-1 {
     font-size: 20px;
     font-weight: 700;
+    margin-top: 10px;
+}
+.section-3 > .special-top-memu > ul > li:last-child > a > .text-box > .sub-title-1 {
+    margin-top: 65px;
 }
 .section-3 > .special-top-memu > ul > li > a > .text-box > .sub-title-2 {
     font-weight: 300;
+    margin-top: 10px;
 }
 .section-3 > .special-top-memu > ul > li:first-child > a > .img-box {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-top-1.png) no-repeat 0 0;
@@ -65,10 +71,18 @@
 
 
 /* special-slide 커스텀 */
+.section-3 > .special-slide-menu {
+    margin-top: 10px;
+}
+.section-3 > .special-slide-menu > .slider {
+    overflow: hidden;
+}
 .section-3 > .special-slide-menu > .slider > ul {
     width: calc(586px * 5);
     height: 223px;
     padding: 10px;
+    transition:margin-left .3s ;
+    margin-left: 0px;
 }
 .section-3 > .special-slide-menu > .slider > ul > li > a > .img-box,
 .section-3 > .special-slide-menu > .slider > ul > li > a > .text-box {
@@ -80,6 +94,26 @@
 }
 .section-3 > .special-slide-menu > .slider > ul > li > a {
     margin-right:40px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li > a > .text-box > .title {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 35px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li > a > .text-box > .sub-title-1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;   
+}
+.section-3 > .special-slide-menu > .slider > ul > li:nth-child(2n + 3) > a > .text-box > .sub-title-1 {
+    margin-top: 35px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li:nth-child(3) > a > .text-box > * {
+    padding-left: 30px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li > a > .text-box > .sub-title-2 {
+    font-weight: 300;
+    margin-top: 10px;
 }
 .section-3 > .special-slide-menu > .slider > ul > li:not(:nth-child(3)) > a::after {
     content: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box_arr.png);
@@ -115,4 +149,46 @@
 }
 .section-3 > .special-slide-menu > .slider> ul > .item-5 > a > .img-box {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-5.jpg) no-repeat 0 0;
+}
+.section-3 > .special-slide-menu > .slider > .slide-btn {
+    width: 100%;
+    height: 60px;
+}
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .left-btn,
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .right-btn {
+    position: absolute;
+    top:50%;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    box-shadow:3px 3px 15px 0 rgba(0,0,0,.2);
+}
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .left-btn {
+    left:0;
+    transform: translateX(-33%) translateY(-100%);
+}
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .right-btn {
+    right:0;
+    transform: translateX(33%) translateY(-100%);
+}
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .left-btn > .img{
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/btn_arrow_bbsslide.png) no-repeat 0 -3px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top:50%;
+    left:50%;
+    width: 14px;
+    height: 24px;
+    background-size: cover;
+}
+.section-3 > .special-slide-menu >  .slider > .slide-btn > .right-btn > .img{
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/btn_arrow_bbsslide.png) no-repeat 0 -33px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top:50%;
+    left:50%;
+    width: 14px;
+    height: 24px;
+    background-size: cover;
 }

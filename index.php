@@ -377,7 +377,7 @@
               <a href="#" class="block flex relative">
                 <div class="img-box"></div>
                 <div class="text-box text-align-center color-333">
-                  <div class="title">넥스트 라운드</div>
+                  <div class="title">넥스트라운드</div>
                   <div class="sub-title-1 color-252525">누구나<br>시작은 벤처였다</div>
                   <div class="sub-title-2">WE CARE VENTURE<br>WE CARE KOREA</div>
                 </div>
@@ -394,7 +394,7 @@
             </li>
           </ul>
         </div>
-        <div class="special-slide-menu">
+        <div class="special-slide-menu relative">
           <div class="slider">
             <ul class="row">
               <li class="item-1 cell">
@@ -407,7 +407,7 @@
                   <div class="img-box"></div>
                 </a>
               </li>
-              <li class="item-2 cell">
+              <li class="item-2 cell active">
                 <a href="#" class="block flex relative">
                   <div class="text-box text-align-center color-333">
                     <div class="title">M&A컨설팅 플랫폼</div>
@@ -443,6 +443,80 @@
                     <div class="sub-title-2">Common Criteria for<br>Innovation Growth</div>
                   </div>
                   <div class="img-box"></div>
+                </a>
+              </li>
+            </ul>
+            <div class="slide-btn">
+              <div class="left-btn">
+                <div class="img"></div>
+              </div>
+              <div class="right-btn">
+                <div class="img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="icon-slide height-100px">
+          <div class="silder height-100px">
+            <ul class="flex">
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                  <div class="icon"></div>
+                  <div class="text">기술거래마트</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">직원광장</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">기업금융나들목</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">혁신성장정책금융센터</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">Business Leaders Forum</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">PB서비스</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">유가증권수탁</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">KDB금융대학교</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">KDB나눔재단</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block flex flex-jc-c">
+                <div class="icon"></div>
+                  <div class="text">KDB미래전략연구소</div>
                 </a>
               </li>
             </ul>

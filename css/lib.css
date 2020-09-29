@@ -134,7 +134,9 @@ label[for] {
 .line-height-0>* {
   line-height: normal;
 }
-
+.height-100px {
+  height:100px;
+}
 .width-30px {
   width: 30px;
 }
