@@ -3,52 +3,116 @@
 }
 .section-3 > .title {
     margin-top: 95px;
+    margin-bottom: 45px;
 }
-.section-3 > .special-menu-top > ul > li > a > .text > .title {
+.section-3 > .special-top-memu > ul {
+    padding: 10px;
+}
+.section-3 > .special-top-memu > ul > li > a {
+    margin-right:40px;
+}
+.section-3 > .special-top-memu > ul > li > a::after {
+    content: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box_arr.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+}
+.section-3 > .special-top-memu > ul > li > a > .text-box > .title {
     font-size: 14px;
-    color: #666;
+    font-weight: 300;
 }
-.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-1 {
+.section-3 > .special-top-memu > ul > li > a > .text-box > .sub-title-1 {
     font-size: 20px;
+    font-weight: 700;
 }
-.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-2 {
-    font-size: 20px;
+.section-3 > .special-top-memu > ul > li > a > .text-box > .sub-title-2 {
+    font-weight: 300;
 }
-.section-3 > .special-menu-top > ul > li > a > .text > .sub-title-3 {
-    font-size: 20px;
+.section-3 > .special-top-memu > ul > li:first-child > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-top-1.png) no-repeat 0 0;
+    background-size: cover;
+    width: 273px;
+    height: 223px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-.section-3 > .special-menu-top > ul > li > a > .text {
-    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0;
-    display: inline-block;
+.section-3 > .special-top-memu > ul > li:first-child > a > .text-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box.png) no-repeat 0 0;
+    background-size: cover;
     width: 273px;
     height: 223px;
 }
-.section-3 > .special-menu-top > ul > li > a > .text::before {
-    content: "";
-    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box_arr.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.section-3 > .special-menu-top > ul > .next-round > a > .img {
-    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/cms_special_01.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0;
-    display: inline-block;
+.section-3 > .special-top-memu > ul > li:last-child > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-top-2.jpg) no-repeat 0 0;
+    background-size: cover;
     width: 273px;
     height: 223px;
-    border-radius: 8px 0 0 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
-.section-3 > .special-menu-top > ul > .future-strategy > a > .img {
-    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/00.미래전약연구소.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 0;
-    display: inline-block;
+.section-3 > .special-top-memu > ul > li:last-child > a > .text-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box.png) no-repeat 0 0;
+    background-size: cover;
     width: 273px;
     height: 223px;
-    border-radius: 8px 0 0 8px;
+}
+
+
+/* special-slide 커스텀 */
+.section-3 > .special-slide-menu > .slider > ul {
+    width: calc(586px * 5);
+    height: 223px;
+    padding: 10px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li > a > .img-box,
+.section-3 > .special-slide-menu > .slider > ul > li > a > .text-box {
+    background-size: cover;
+    width: 273px;
+    height: 223px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li > a {
+    margin-right:40px;
+}
+.section-3 > .special-slide-menu > .slider > ul > li:not(:nth-child(3)) > a::after {
+    content: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bg_special_box_arr.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    top:50%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+}
+
+.section-3 > .special-slide-menu > .slider > ul > li:not(:nth-child(3)) > a > .text-box {
+    width: 273px;
+    height: 223px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.section-3 > .special-slide-menu > .slider> ul > .item-1 > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-1.png) no-repeat 0 0;
+}
+.section-3 > .special-slide-menu > .slider> ul > .item-2 > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-2.jpg) no-repeat 0 0;
+}
+.section-3 > .special-slide-menu > .slider> ul > .item-3 > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-3.png) no-repeat 0 0;
+}
+.section-3 > .special-slide-menu > .slider> ul > .item-4 > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-4.jpg) no-repeat 0 0;
+}
+.section-3 > .special-slide-menu > .slider> ul > .item-5 > a > .img-box {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/special-slie-5.jpg) no-repeat 0 0;
 }

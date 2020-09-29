@@ -77,6 +77,9 @@ label[for] {
   position: relative;
 }
 
+.absolute {
+  position: absolute;
+}
 .fixed {
   position: fixed;
 }
@@ -288,7 +291,15 @@ label[for] {
 .color-fff {
   color: #fff;
 }
-
+.color-333 {
+  color: #333333;
+}
+.color-252525 {
+  color: #252525;
+}
+.white-space-no {
+  white-space: nowrap;
+}
 /* fullpage-move-menu 커스텀 */
 #menu {
   top: 25%;
@@ -385,10 +396,10 @@ body.fp-viewing-anchor5 #menu > li:not(.with-kdb)::after {
   left:-10px;
   margin-top: 25px;
 }
-body.fp-viewing-anchor2 #menu > .scroll-guide-icon,
-body.fp-viewing-anchor3 #menu > .scroll-guide-icon,
-body.fp-viewing-anchor4 #menu > .scroll-guide-icon,
-body.fp-viewing-anchor5 #menu > .scroll-guide-icon {
+body.fp-viewing-anchor2 #menu .scroll-guide-icon,
+body.fp-viewing-anchor3 #menu .scroll-guide-icon,
+body.fp-viewing-anchor4 #menu .scroll-guide-icon,
+body.fp-viewing-anchor5 #menu .scroll-guide-icon {
   background-position: 0 0%;
 }
 /* top-menu-bar 커스텀 */

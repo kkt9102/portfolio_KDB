@@ -214,10 +214,18 @@
           <nav class="notice cell">
             <ul class="">
               <div class="title">공지사항</div>
-              <li class="first-list"><a href="#" class="block">수도권 소재 점포 영업시간 단축 안내</a><div class="date">2020-09-01</div></li>
-              <li class=""><a href="#" class="block">비대면 실명확인 서비스 일시중단 안내 (8.31/9.1)</a><div class="date">2020-08-31</div></li>
-              <li class=""><a href="#" class="block">「한국산업은행 2020년 혁신계획」 게시</a><div class="date">2020-08-31</div></li>
-              <li class=""><a href="#" class="block">뱅크월렛 서비스 종료 안내</a><div class="date">2020-08-24</div></li>
+              <li class="first-list"><a href="#" class="block">수도권 소재 점포 영업시간 단축 안내</a>
+                <div class="date">2020-09-01</div>
+              </li>
+              <li class=""><a href="#" class="block">비대면 실명확인 서비스 일시중단 안내 (8.31/9.1)</a>
+                <div class="date">2020-08-31</div>
+              </li>
+              <li class=""><a href="#" class="block">「한국산업은행 2020년 혁신계획」 게시</a>
+                <div class="date">2020-08-31</div>
+              </li>
+              <li class=""><a href="#" class="block">뱅크월렛 서비스 종료 안내</a>
+                <div class="date">2020-08-24</div>
+              </li>
             </ul>
           </nav>
           <nav class="event-slide relative cell">
@@ -229,22 +237,22 @@
               </li>
               <li>
                 <a href="#" class="block">
-                <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-2.jpg" alt="">
+                  <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-2.jpg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" class="block">
-                <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-3.jpg" alt="">
+                  <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-3.jpg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" class="block">
-                <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-4.jpg" alt="">
+                  <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-4.jpg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#" class="block">
-                <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-5.png" alt="">
+                  <img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/page-2-slider-5.png" alt="">
                 </a>
               </li>
             </ul>
@@ -261,24 +269,34 @@
           <nav class="hire-security cell">
             <ul class="hire-board">
               <div class="title">입찰&채용</div>
-              <li><a href="#" class="block">[사전규격공개]상시 회상회의 체계 구축 사업</a><div class="date">2020-09-01</div></li>
-              <li><a href="#" class="block">오픈뱅킹 및 디지털금융 서비스 강화 추진</a><div class="date">2020-08-31</div></li>
+              <li><a href="#" class="block">[사전규격공개]상시 회상회의 체계 구축 사업</a>
+                <div class="date">2020-09-01</div>
+              </li>
+              <li><a href="#" class="block">오픈뱅킹 및 디지털금융 서비스 강화 추진</a>
+                <div class="date">2020-08-31</div>
+              </li>
             </ul>
             <ul class="security-board">
               <div class="title">보안소식</div>
-              <li><a href="#" class="block">「코로나 19 피싱」피해예방을 위한 대고객 안내</a><div class="date">2020-03-04</div></li>
-              <li><a href="#" class="block">대포통장 명의인에 대한 금융거래 제한 확대 시행 안내</a><div class="date">2020-02-13</div></li>
+              <li><a href="#" class="block">「코로나 19 피싱」피해예방을 위한 대고객 안내</a>
+                <div class="date">2020-03-04</div>
+              </li>
+              <li><a href="#" class="block">대포통장 명의인에 대한 금융거래 제한 확대 시행 안내</a>
+                <div class="date">2020-02-13</div>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="section-2-bottom-menu-item row">
           <nav class="section-2-bottom-menu-box cell">
             <ul class="row text-align-center">
-              <div class="icon cell"><img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_boldbox.png" alt=""></div>
+              <div class="icon cell"><img
+                  src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_boldbox.png" alt=""></div>
               <li class="cell"><a href="#" class="block"><span class="relative">경영공시</span></a></li>
               <li class="cell"><a href="#" class="block"><span class="relative">상품공시</span></a></li>
               <li class="cell"><a href="#" class="block"><span class="relative">윤리경영</span></a></li>
-              <li class="cell btn-item relative"><a class="block"><span class="relative">정보공개<i class="fas fa-caret-down"></i></span></a>
+              <li class="cell btn-item relative"><a class="block"><span class="relative">정보공개<i
+                      class="fas fa-caret-down"></i></span></a>
                 <ul class="btn-menu">
                   <li><a href="#" class="block">사전정보공표</a></li>
                   <li><a href="#" class="block">정보공개청구</a></li>
@@ -351,28 +369,91 @@
     <div class="section">
       <div class="section-3 con-1">
         <div class="title text-align-center"><img
-              src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/h2_special_kdb.png" alt="">
+            src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/h2_special_kdb.png" alt="">
         </div>
-        <div class="special-menu-top">
-          <ul class="row">
-            <li class="next-round cell text-align-center"><a href="#" class="block"><span class="img"></span><span class="text">
-              <div class="title">넥스트 라운드</div>
-              <div class="sub-title-1">누구나 시작은 벤처였다</div>
-              <div class="sub-title-2">WE CARE VENTURE</div>
-              <div class="sub-title-3">WE CARE KOREA</div>
-            </span></a></li>
-            <li class="future-strategy cell text-align-center"><a href="#" class="block"><span class="img"></span><span class="text">
-              <div class="sub-title-1">KDB 미래전략 연구소</div>
-              <div class="sub-title-2">대한민국 혁신성장을 지원하는 대표 연구기관</div>
-            </span></a></li>
+        <div class="special-top-memu">
+          <ul class="flex">
+            <li>
+              <a href="#" class="block flex relative">
+                <div class="img-box"></div>
+                <div class="text-box text-align-center color-333">
+                  <div class="title">넥스트 라운드</div>
+                  <div class="sub-title-1 color-252525">누구나<br>시작은 벤처였다</div>
+                  <div class="sub-title-2">WE CARE VENTURE<br>WE CARE KOREA</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block flex relative">
+                <div class="img-box"></div>
+                <div class="text-box text-align-center color-333">
+                  <div class="sub-title-1 color-252525">KDB미래전략연구소</div>
+                  <div class="sub-title-2">대한민국 혁신성장을 지원하는<br>대표 연구기관</div>
+                </div>
+              </a>
+            </li>
           </ul>
+        </div>
+        <div class="special-slide-menu">
+          <div class="slider">
+            <ul class="row">
+              <li class="item-1 cell">
+                <a href="#" class="block flex relative">
+                  <div class="text-box text-align-center color-333">
+                    <div class="title">온렌딩긍윰 디지털 플랫폼</div>
+                    <div class="sub-title-1 color-252525">온렌딩대출<br>중소기업 정책자금</div>
+                    <div class="sub-title-2">온라인 적격예비검토, 상품제안,<br>실시간 잔여한도 조회 등</div>
+                  </div>
+                  <div class="img-box"></div>
+                </a>
+              </li>
+              <li class="item-2 cell">
+                <a href="#" class="block flex relative">
+                  <div class="text-box text-align-center color-333">
+                    <div class="title">M&A컨설팅 플랫폼</div>
+                    <div class="sub-title-1">중소·중견기업<br>성장의 길라잡이</div>
+                    <div class="sub-title-2">국내외 M&A정보,<br>Growth Partnership,<br>경영·재무컨설팅 등</div>
+                  </div>
+                  <div class="img-box"></div>
+                </a>
+              </li>
+              <li class="item-3 cell">
+                <a href="#" class="block flex relative">
+                  <div class="text-box color-333">
+                    <div class="sub-title-1">비대면 서비스</div>
+                    <div class="sub-title-2">영업정 방문 없이,<br>입출금통장 개설,인터넷뱅킹<br>이용신청부터<br>OTP발급·배송,제변경까지! ＞</div>
+                  </div>
+                  <div class="img-box"></div>
+                </a>
+              </li>
+              <li class="item-4 cell">
+                <a href="#" class="block flex relative">
+                  <div class="text-box text-align-center color-333">
+                    <div class="title">영업점 방문NO!</div>
+                    <div class="sub-title-1">KDB Hi 비대면<br>입출금 통장</div>
+                    <div class="sub-title-2">인터넷 스마트폰 뱅킹<br>자동화기기 수수료 우대</div>
+                  </div>
+                  <div class="img-box"></div>
+                </a>
+              </li>
+              <li class="item-5 cell">
+                <a href="#" class="block flex relative">
+                  <div class="text-box text-align-center color-333">
+                    <div class="sub-title-1">2020<br>혁신성장 공동기준<br>메뉴얼</div>
+                    <div class="sub-title-2">Common Criteria for<br>Innovation Growth</div>
+                  </div>
+                  <div class="img-box"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <!-- section .4 HTML -->
-    <div class="section" id="section3">
+    <div class="section " id="section3">
       <div class="section-4">
-        
+
       </div>
 
     </div>
@@ -398,7 +479,8 @@
         <div class="footer-last row">
           <div class="text-box cell">
             <div class="address">07242 서울시 영등포구 은행로 14</div>
-            <div class="main-tel">대표전화 : 02-787-4000, 고객상담실 국내 : 1588-1500, 1668-1500, 1668-1500, 해외 : +82-1588-1500, +82-1668-1500</div>
+            <div class="main-tel">대표전화 : 02-787-4000, 고객상담실 국내 : 1588-1500, 1668-1500, 1668-1500, 해외 : +82-1588-1500,
+              +82-1668-1500</div>
             <div class="copyright">Copyright ©2019 Korea Development Bank, All right reserved.</div>
           </div>
           <div class="icon-link cell-right">
@@ -406,16 +488,17 @@
               <li class="blog cell"><a href="#" class="block"></a></li>
               <li class="facebook cell"><a href="#" class="block"></a></li>
               <li class="youtube cell"><a href="#" class="block"></a></li>
-              <div class="certification-mark cell"><img src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_wa.png" alt=""></div>
+              <div class="certification-mark cell"><img
+                  src="https://kkt9102.github.io/img1/blog/article/portfolio/kdb/ico_wa.png" alt=""></div>
             </ul>
             <div class="family-site cell relative">Family Site<span class="icon"></span>
-                <ul class="family-site-list">
-                  <li><a href="#" class="block">KDB캐피탈</a></li>
-                  <li><a href="#" class="block">KDB인프라</a></li>
-                  <li><a href="#" class="block">KDB인베스트먼트</a></li>  
-                  <li><a href="#" class="block">KDB나눔재단</a></li>
-                  <li><a href="#" class="block">KDB비즈</a></li>
-                </ul>
+              <ul class="family-site-list">
+                <li><a href="#" class="block">KDB캐피탈</a></li>
+                <li><a href="#" class="block">KDB인프라</a></li>
+                <li><a href="#" class="block">KDB인베스트먼트</a></li>
+                <li><a href="#" class="block">KDB나눔재단</a></li>
+                <li><a href="#" class="block">KDB비즈</a></li>
+              </ul>
             </div>
           </div>
         </div>
