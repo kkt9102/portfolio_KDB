@@ -19,9 +19,9 @@
   <link rel="stylesheet" href="css/section-1.css">
   <link rel="stylesheet" href="css/section-2.css">
   <link rel="stylesheet" href="css/section-3.css">
+  <link rel="stylesheet" href="css/section-4.css">
   <script src="js/kdb.js"></script>
 </head>
-
 <body>
   <!-- fullpage-move-menu -->
   <ul id="menu" class="fixed">
@@ -397,7 +397,7 @@
         <div class="special-slide-menu relative">
           <div class="slider">
             <ul class="row">
-              <li class="item-1 cell">
+              <li class="item-1 cell active">
                 <a href="#" class="block flex relative">
                   <div class="text-box text-align-center color-333">
                     <div class="title">온렌딩긍윰 디지털 플랫폼</div>
@@ -407,7 +407,7 @@
                   <div class="img-box"></div>
                 </a>
               </li>
-              <li class="item-2 cell active">
+              <li class="item-2 cell">
                 <a href="#" class="block flex relative">
                   <div class="text-box text-align-center color-333">
                     <div class="title">M&A컨설팅 플랫폼</div>
@@ -456,80 +456,133 @@
             </div>
           </div>
         </div>
-        <div class="icon-slide height-100px">
-          <div class="silder height-100px">
-            <ul class="flex">
-              <li>
+        <div class="icon-slide height-100px relative">
+          <div class="slider height-100px">
+            <ul class="flex flex-ai-c height-100px">
+              <li id="tech-mart" class="flex flex-jc-c relative active">
                 <a href="#" class="block flex flex-jc-c">
-                  <div class="icon"></div>
-                  <div class="text">기술거래마트</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">기술거래마트</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="staff-square" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">직원광장</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">직원광장</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="corp-finance" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">기업금융나들목</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">기업금융나들목</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="inno-policy-center" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">혁신성장정책금융센터</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">혁신성장정책금융센터</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="business-leader" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">Business Leaders Forum</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">Business Leaders Forum</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="pb-service" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">PB서비스</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">PB서비스</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="securities" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">유가증권수탁</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">유가증권수탁</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="kdb-university" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">KDB금융대학교</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">KDB금융대학교</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="kdb-share" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">KDB나눔재단</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">KDB나눔재단</div>
+                  </div>
                 </a>
               </li>
-              <li>
+              <li id="kdb-future" class="flex flex-jc-c relative">
                 <a href="#" class="block flex flex-jc-c">
-                <div class="icon"></div>
-                  <div class="text">KDB미래전략연구소</div>
+                  <div class="item flex flex-jc-c">
+                    <div class="icon"></div>
+                    <div class="text relative">KDB미래전략연구소</div>
+                  </div>
                 </a>
               </li>
             </ul>
+            <div class="slide-btn">
+              <div class="left-btn">
+                <div class="img"></div>
+              </div>
+              <div class="right-btn">
+                <div class="img"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- section .4 HTML -->
-    <div class="section " id="section3">
-      <div class="section-4">
-
+    <div class="section" id="section3">
+      <div class="section-4 con-1 relative">
+        <div class="section-title-box text-align-center">
+          <p class="font-size-20 color-666">기업금융의 중심</p>
+          <div class="section-title"></div>
+          <p class="color-666">기업의 지속성장과 발전을 위해 KDB산업은행이<br>맞춤형 금융솔루션을 제안합니다.</p>
+        </div>
+        <div class="input-section flex flex-jc-c">
+          <input type="text" placeholder="기업금융정보를 검색하세요! 예)온렌딩">
+          <button class="search-btn flex flex-jc-e flex-ai-c relative">
+            <div class="icon"></div>
+            <div class="text">검색</div>
+          </button>
+        </div>
+        <div class="symbol"></div>
+        <nav class="icon-menu">
+          <ul class="li"><a href="#" class="block"></a></ul>
+          <ul class="li"><a href="#" class="block"></a></ul>
+          <ul class="li"><a href="#" class="block"></a></ul>
+          <ul class="li"><a href="#" class="block"></a></ul>
+          <ul class="li"><a href="#" class="block"></a></ul>
+          <ul class="li"><a href="#" class="block"></a></ul>
+        </nav>
+        <!-- humen-icon -->
+        <div class="humen-1 absolute"></div>
+        <div class="humen-2 absolute"></div>
+        <div class="humen-3 absolute"></div>
+        <div class="humen-4 absolute"></div>
+        <div class="humen-5 absolute"></div>
       </div>
-
     </div>
     <!-- section .5 HTML -->
     <div class="section fp-auto-height">
@@ -579,7 +632,5 @@
       </div>
     </div>
   </div>
-
 </body>
-
 </html>

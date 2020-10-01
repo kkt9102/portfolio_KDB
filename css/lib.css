@@ -250,7 +250,9 @@ label[for] {
 .flex>.cell {
   float: none;
 }
-
+.flex-jc-c {
+  justify-content: center;
+}
 .flex-jc-e {
   justify-content: flex-end;
 }
@@ -296,8 +298,17 @@ label[for] {
 .color-333 {
   color: #333333;
 }
+.color-666 {
+  color: #666666;
+}
 .color-252525 {
   color: #252525;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-58 {
+  font-size: 58px;
 }
 .white-space-no {
   white-space: nowrap;

@@ -1,3 +1,119 @@
 .section-4 {
     padding-top: 60px;
 }
+.section-4 > .section-title-box > p {
+    margin: 0;
+    padding: 0;
+}
+.section-4 > .section-title-box > p:first-child {
+    font-weight: 300;
+    margin-top: 130px;
+}
+
+.section-4 > .section-title-box > .section-title {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat 0 -365px;
+    width: 570px;
+    height: 121px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.section-4 > .section-title-box > p:last-child {
+    margin-top: 10px;
+}
+.input-section  {
+    margin-top: 45px;
+}
+.input-section > input {
+    border:none;
+    font-size: 16px;
+    width: 497px;
+    height: 40px;
+    padding: 10px 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.input-section > input:focus {
+    outline:2px solid #0063cc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.input-section > .search-btn {
+    border:none;
+    width: 100px;
+    height: 60px;
+    background: #0063cc;
+    color:#fff;
+    font-size:18px;
+    outline: 0;
+    cursor: pointer;
+}
+.input-section > .search-btn > .icon {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1095px -300px;
+    width: 30px;
+    height: 26px;
+    margin: 10px;
+}
+
+.input-section > .search-btn::after {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1130px -300px;
+    width: 20px;
+    left:100%;
+	height: 60px;
+}
+
+.input-section > .search-btn:hover {
+    background: #1AA3FA;
+}
+.input-section > .search-btn:hover::after {
+    background-position:-1130px -360px;
+}
+.symbol {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1093px -440px;
+    width: 223px;
+    height: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* human-icon 커스텀 */
+.humen-1 {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -580px -440px;
+    width: 310px;
+	height: 372px;
+    top:53%;
+    left:82.5%;
+}
+.humen-2 {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -890px -440px;
+    width: 63px;
+    height: 251px;
+    top:63%;
+    left:5%;
+}
+.humen-3 {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -954px -440px;
+    width: 45px;
+    height: 132px;
+    top:72%;
+    left:12%;
+}
+.humen-4 {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1000px -440px;
+    width: 45px;
+    height: 132px;
+    top:80%;
+    left:1.8%;
+}
+.humen-5 {
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1047px -440px;
+    width: 45px;
+    height: 132px;
+    top:77%;
+    left:9%;
+}

@@ -13,7 +13,6 @@ function top_menu_scroll(){
   $(document).ready(function(){
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
-
       if (scroll > 0) {
         $('.top-menu-bar>.menu-box-2-background').css('margin-top','0');
       }
@@ -24,10 +23,6 @@ function top_menu_scroll(){
     })
   })
 }
-
-
-
-
 function menu_scroll(){
   var scroll = $('#fullpage').position('translateY','0');
   if (scroll < 0) {
@@ -66,12 +61,10 @@ function hover_menu_underline(){
     var orginWidth = $(this).width();
     var originLeft = $(this).position().left;
     var $under_bar = $('.hover-item');
-
     $under_bar.css({
       width: orginWidth + "px",
       left: originLeft + "px",
     });
-
     console.log(orginWidth);
   })
   $('.top-menu-bar>.menu-box-2-background>.menu-box-2>.text-menu>.text-item').mouseleave(function(){
@@ -194,7 +187,7 @@ function special_slide() {
   $('.section-3 > .special-slide-menu >  .slider > .slide-btn > div').click(function () {
     var $Click_btn = $(this);
     var $active = $('.section-3 > .special-slide-menu > .slider > ul').find('>.active');
-    var index = $active.index();
+    var $index = $active.index();
     var $slide = $('.section-3 > .special-slide-menu > .slider > ul');
     var isLeft = $Click_btn.index() == 0;
     var $post = null;
@@ -206,16 +199,50 @@ function special_slide() {
     else {
       $post = $active.next();
     }
-    if ( $post.length == 0) {
+    if ( $post.index() == -1) {
       return;
+  }
+    if ( $post.index() == 4) {
+      return;
+      
     }
     $active.removeClass('active');
     $post.addClass('active');
     
-    $slide.css('margin-left', -583 * index);
-    console.log(index);
+    $slide.css('margin-left', -586 * $post.index());
+    console.log($post.index());
   });
  
+
+  $('.section-3 > .icon-slide >  .slider > .slide-btn > div').click(function() {
+    var $Click_btn = $(this);
+    var $active = $('.section-3 > .icon-slide> .slider > ul').find('>.active');
+    var $index = $active.index();
+    var $slide = $('.section-3 > .icon-slide > .slider > ul');
+    var isLeft = $Click_btn.index() == 0;
+    var $post = null;
+
+
+    if ( isLeft ) {
+      $post = $active.prev();
+    }
+    else {  
+      $post = $active.next();
+    }
+    if ( $post.index() == -1) {
+      return;
+  }
+    if ( $post.index() == 7) {
+      return;
+      
+    }
+    $active.removeClass('active');
+    $post.addClass('active');
+    
+    $slide.css('margin-left', -255 * $post.index());
+  });
+
+
 }
 
 
