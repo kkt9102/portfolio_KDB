@@ -342,6 +342,12 @@ body.fp-viewing-anchor4 #menu li:not(.active),
 body.fp-viewing-anchor5 #menu li:not(.active) { 
   color: rgba(0, 0, 0, .4);
 }
+body.fp-viewing-anchor5 #menu>li:nth-child(4) {
+  color:#000;
+}
+body.fp-viewing-anchor5 #menu>li:nth-child(4)::before {
+  background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/bul_pxnavi.png) no-repeat 0 100%;
+}
 #menu>li:not(.with-kdb).active {
   color:#000;
 }

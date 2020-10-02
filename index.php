@@ -561,27 +561,81 @@
           <p class="color-666">기업의 지속성장과 발전을 위해 KDB산업은행이<br>맞춤형 금융솔루션을 제안합니다.</p>
         </div>
         <div class="input-section flex flex-jc-c">
+          <div class="input-fousc">
           <input type="text" placeholder="기업금융정보를 검색하세요! 예)온렌딩">
+          </div>
           <button class="search-btn flex flex-jc-e flex-ai-c relative">
             <div class="icon"></div>
             <div class="text">검색</div>
           </button>
         </div>
         <div class="symbol"></div>
-        <nav class="icon-menu">
-          <ul class="li"><a href="#" class="block"></a></ul>
-          <ul class="li"><a href="#" class="block"></a></ul>
-          <ul class="li"><a href="#" class="block"></a></ul>
-          <ul class="li"><a href="#" class="block"></a></ul>
-          <ul class="li"><a href="#" class="block"></a></ul>
-          <ul class="li"><a href="#" class="block"></a></ul>
-        </nav>
+        
         <!-- humen-icon -->
         <div class="humen-1 absolute"></div>
         <div class="humen-2 absolute"></div>
         <div class="humen-3 absolute"></div>
         <div class="humen-4 absolute"></div>
         <div class="humen-5 absolute"></div>
+        <!-- hexagon-menu HTML -->
+        <nav class="hexagon-icon-menu">
+          <ul class="flex flex-jc-sa">
+            <li class="hexagon-menu-1">
+              <a href="#" class="block">
+                <div class="hexagon">
+                  <span class="icon"></span>
+                  <span></span>
+                  <div class="text">중소중견<br>기업지원</div>
+                </div>
+              </a>
+            </li>
+            <li class="hexagon-menu-2">
+              <a href="#" class="block">
+                <div class="hexagon">
+                <span class="icon"></span>
+                  <span></span>
+                  <div class="text">혁신/벤처<br>기업지원</div>
+                </div>
+              </a>
+            </li>
+            <li class="hexagon-menu-3">
+              <a href="#" class="block">
+                <div class="hexagon">
+                <span class="icon"></span>
+                  <span></span>
+                  <div class="text">글로벌/IB업무</div>
+                </div>
+              </a>
+            </li>
+            <li class="hexagon-menu-4">
+              <a href="#" class="block">
+                <div class="hexagon">
+                <span class="icon"></span>
+                  <span></span>
+                  <div class="text">기업금융</div>
+                </div>
+              </a>
+            </li>
+            <li class="hexagon-menu-5">
+              <a href="#" class="block">
+                <div class="hexagon">
+                <span class="icon"></span>
+                  <span></span>
+                  <div class="text">온렌딩/<br>간접투자</div>
+                </div>
+              </a>
+            </li>
+            <li class="hexagon-menu-6">
+              <a href="#" class="block">
+                <div class="hexagon">
+                <span class="icon"></span>
+                  <span></span>
+                  <div class="text">자금관리<br>서비스</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <!-- section .5 HTML -->

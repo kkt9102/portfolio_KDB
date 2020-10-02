@@ -24,7 +24,8 @@
 .input-section  {
     margin-top: 45px;
 }
-.input-section > input {
+
+.input-section > .input-fousc > input {
     border:none;
     font-size: 16px;
     width: 497px;
@@ -35,8 +36,7 @@
     outline: 0;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
-.input-section > input:focus {
-    outline:2px solid #0063cc;
+.input-section > .input-fousc > input:focus {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -86,34 +86,166 @@
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -580px -440px;
     width: 310px;
 	height: 372px;
-    top:53%;
+    top:50.5%;
     left:82.5%;
 }
 .humen-2 {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -890px -440px;
     width: 63px;
     height: 251px;
-    top:63%;
+    top:60.5%;
     left:5%;
 }
 .humen-3 {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -954px -440px;
     width: 45px;
     height: 132px;
-    top:72%;
+    top:68%;
     left:12%;
 }
 .humen-4 {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1000px -440px;
     width: 45px;
     height: 132px;
-    top:80%;
+    top:76.5%;
     left:1.8%;
 }
 .humen-5 {
     background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat -1047px -440px;
     width: 45px;
     height: 132px;
-    top:77%;
+    top:72.5%;
     left:9%;
+}
+/* hexagon-menu */
+.hexagon-icon-menu {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hexagon-icon-menu > ul > li > a > .hexagon {
+    background: #fff;
+    position: relative;
+    top: 50px;
+    width: 86px;
+    height: 38px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    transition: background .3s;
+}
+.hexagon-icon-menu > ul > li > a > .hexagon > .text {
+    padding-top:75px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 500;
+    transition: color .3s;
+}
+.hexagon-icon-menu > ul > li > a:hover > .hexagon > .text {
+    color:#0063cc;
+}
+.hexagon-icon-menu > ul > li > a > .hexagon > span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: background .3s;
+}
+.hexagon-icon-menu > ul > li > a:hover > .hexagon,
+.hexagon-icon-menu > ul > li > a:hover  > .hexagon > span,
+.hexagon-icon-menu > ul > li > a:hover > .hexagon::before,
+.hexagon-icon-menu > ul > li > a:hover > .hexagon::after 
+ {
+    background: #0063cc;
+}
+.hexagon-icon-menu > ul > li > a > .hexagon::before,
+.hexagon-icon-menu > ul > li > a > .hexagon::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 56px;
+    height: 48px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    transform: rotate(31deg) skew(-30deg);
+    border-radius: 10px;
+    background: #fff;
+    transition: background .3s;
+} 
+.hexagon-icon-menu > ul > li > a > .hexagon::before {
+    top:-25px;
+}
+.hexagon-icon-menu > ul > li > a > .hexagon::after {
+    top:14px;
+}
+.hexagon-icon-menu > ul > li  > a > .hexagon > .icon {
+    left:50%;
+    transform: translateX(-50%);
+    transition: background-position .3s;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-1 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1345px -467px;
+    width: 40px;
+    height: 36px;
+    z-index: 2;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-1 > a:hover > .hexagon > .icon {
+    background-position: -1431px -467px;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-2 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1344px -556px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-2 > a:hover > .hexagon > .icon {
+    background-position: -1430px -556px;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-3 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1346px -647px;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-3 > a:hover > .hexagon > .icon {
+    background-position: -1432px -647px;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-4 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1347px -733px;
+    width: 34px;
+    height: 44px;
+    z-index: 2;
+    top:-10%;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-4 > a:hover > .hexagon > .icon {
+    background-position: -1433px -733px;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-5 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1337px -831px;
+    width: 54px;
+    height: 29px;
+    z-index: 2;
+    top:10%;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-5 > a:hover > .hexagon > .icon {
+    background-position: -1423px -831px;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-6 > a > .hexagon > .icon {
+    content: "";
+    position: absolute;
+    background: url(https://kkt9102.github.io/img1/blog/article/portfolio/kdb/img_common.png) no-repeat  -1345px -914px;
+    width: 44px;
+    height: 43px;
+    z-index: 2;
+}
+.hexagon-icon-menu > ul > .hexagon-menu-6 > a:hover > .hexagon > .icon {
+    background-position: -1431px -914px;
 }
